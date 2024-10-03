@@ -1,0 +1,1409 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Understanding WCAG By Rashmi Choube</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="wcagcustom.css" rel="stylesheet" />
+
+
+    </head>
+<body>
+<div class="container-fluid">
+<!-- Content here -->
+
+    <div class="card  " id="header">
+    <div class="card-body d-flex align-items-center" >
+   <h1>Understanding WCAG 2.2  </h1>   <small class="text-body-secondary"> Notes by Rashmi Choube </small> 
+   
+
+    <ul class="nav justify-content-end" id="mainnav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#WCAG2.2">WCAG 2.2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#SemanticHTML">HTML Accessibility Best Practice</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#a11Ychecklist">Accessibility Checklist</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#InterviewQA">Interview Quastion & Answers</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+
+</div>
+
+
+<div class="container-fluid" class="section">
+    <div class="row align-items-start" ID="WCAG2.2" style="margin-top:150px">
+    <div class="col col-3">
+            <div class="card border-info text-center">
+            <div class="card-header per"><h5>Perceivable</h5></div>
+            <div class="card-body">
+            <!--<h5 class="card-title">Info card title</h5>-->
+            <p class="card-text">Information and user interface components must be presentable to users in ways they can perceive.</p>
+            </div>
+            </div>
+
+
+            <div class="card border-info guidelines ">
+            <div class="card-header"><h5>1.1 Text Alternatives</h5>
+            <div class="card-body">
+            <p class="card-text">Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.
+            </p>
+            <hr>
+            <h5 class="card-title">1.2 Time-based Media</h5>
+            <p class="card-text"> Provide alternatives for time-based media.</p>
+            <hr>
+            <h5 class="card-title">1.3 Adaptable</h5>
+            <p class="card-text">Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
+            <hr>
+            <h5 class="card-title">1.4 Distinguishable</h5>
+            <p class="card-text">Make it easier for users to see and hear content including separating foreground from background.</p>
+            </div>
+            </div>
+            </div>
+    </div>
+    <div class="col col-3">
+            <div class="card border-warning text-center">
+            <div class="card-header OP"><h5>Operable</h5></div>
+            <div class="card-body">
+            <!--<h5 class="card-title">Info card title</h5>-->
+            <p class="card-text">User interface components and navigation must be operable.</p>
+            </div>
+            </div>
+            <div class="card border-warning guidelines">
+            <div class="card-header"><h5>2.1 Keyboard Accessible</h5>
+            <div class="card-body">
+            <p class="card-text">Make all functionality available from a keyboard.</p>
+            <hr>
+            <h5 class="card-title">2.2 Enough Time</h5>
+            <p class="card-text">Provide users enough time to read and use content.</p>
+            <hr>
+            <h5 class="card-title"> 2.3 Seizures and Physical Reactions</h5>
+            <p class="card-text">Do not design content in a way that is known to cause seizures or physical reactions.</p>
+            <hr>
+            <h5 class="card-title">2.4 Navigable</h5>
+            <p class="card-text">Provide ways to help users navigate, find content, and determine where they are.</p>
+            <hr>
+            <h5 class="card-title">2.5 Input Modalities</h5>
+            <p class="card-text">Make it easier for users to operate functionality through various inputs beyond keyboard.</p>
+            </div>
+            </div>
+            </div>
+    </div>
+    <div class="col col-3">
+            <div class="card border-danger text-center">
+            <div class="card-header Und"><h5>Understandable</h5></div>
+            <div class="card-body">
+            <!--<h5 class="card-title">Info card title</h5>-->
+            <p class="card-text">Information and the operation of the user interface must be understandable.</p>
+            </div>
+            </div>
+
+            <div class="card border-danger guidelines">
+            <div class="card-header"><h5> 3.1 Readable</h5>
+            <div class="card-body">
+            <p class="card-text">Make text content readable and understandable.</p>
+            <hr>
+            <h5 class="card-title">3.2 Predictable</h5>
+            <p class="card-text">Make Web pages appear and operate in predictable ways.</p>
+            <hr>
+            <h5 class="card-title"> 3.3 Input Assistance</h5>
+            <p class="card-text">Help users avoid and correct mistakes.</p>
+            </div>
+            </div>
+            </div>
+
+    </div>
+    <div class="col col-3">
+            <div class="card border-success text-center ">
+            <div class="card-header Rob"><h5>Robust</h5></div>
+            <div class="card-body">
+            <!--<h5 class="card-title">Info card title</h5>-->
+            <p class="card-text">Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.</p>
+            </div>
+            </div>
+
+            <div class="card border-success guidelines">
+            <div class="card-header"><h5> 4.1 Compatible</h5>
+            <div class="card-body">
+            <p class="card-text">Maximize compatibility with current and future user agents, including assistive technologies.</p>
+
+            </div>
+            </div>
+            </div>
+
+    </div>
+    </div>
+</div>
+
+<div class="container-fluid" >
+    <div class="accordion" style="margin-top: 15px;" id="accordionExample">
+    <div class="accordion-item border-info">
+        <h2 class="accordion-header">
+        <button class="accordion-button" style="background-color:#cfe2ff" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h4>Perceivable: Information and user interface components must be presentable to users in ways they can perceive.</h4>
+        </button>
+        </h2>
+
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+    <div class="card">
+    <div class="card-body">
+
+        <nav>
+        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+        <button class="nav-link active " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" >1.1 Text Alternatives</button>
+        <button class="nav-link " id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">1.2 Time-based Media</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">1.3 Adaptable</button>
+        <button class="nav-link " id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">1.4 Distinguishable</button>
+        </div>
+        </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+                    <p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
+                    <h6>1.1.1 Non-text Content</h6>
+                    All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.<br>
+                    - Controls and Input : Provide descriptive names
+                        Example: Buttons, form fields
+                        <br>
+                    - Time-Based Media : Provide captions and audio descriptions
+                        Example: Videos, live broadcasts
+                        <br>
+                    - Tests : Ensure descriptive text alternatives without affecting test validity
+                        Example: Online quizzes
+                        <br>
+                    - Sensory : Describe non-text content for specific sensory experiences
+                        Example: Color cues in charts
+                        <br>
+                    - CAPTCHA : Alternative formats for accessibility
+                        Example: Audio CAPTCHAs for visually impaired users
+                        <br>
+                    - Decoration, Formatting, Invisible : Implement so it can be ignored by assistive technology
+                        Example: Decorative images, layout elements
+
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+
+                    <h6>1.3.1 Info and Relationships (Level A)</h6> Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.
+
+                    Semantic markup is appropriately used to designate headings, regions/landmarks, lists, emphasized or special text, etc.
+                    Tables are used for tabular data and data cells are associated with their headers. Data table captions, if present, are associated to data tables.
+                    Text labels are associated with form inputs. Related form controls are grouped with fieldset/legend. ARIA labelling may be used when standard HTML is insufficient.
+                    <hr>
+
+
+                    <h6>1.3.2 Meaningful Sequence</h6>The reading and navigation order (determined by code order) is logical and intuitive.
+                    <hr>
+                    <h6>1.3.3 Sensory Characteristics (Level A)</h6>
+                    Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, color, size, visual location, orientation, or sound.
+                    It requires that additional information be provided when instructions rely on shape or position (e.g., "round button" or "button to the right")
+                    <hr>
+                    <h6>1.3.4 Orientation (Level AA)</h6>
+                    Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential (e.g piano app).
+                    Goal: Devices can be used in any orientation.
+                    What to do: Don't lock content to either portrait or landscape presentation.
+                    <hr>
+                    <h6> 1.3.5 Identify Input Purpose (Level AA)</h6>
+                    Ensures form input purposes are programmatically identifiable to assist all users, especially those with cognitive disabilities.
+                    <hr>
+                    <h6>1.3.6 Identify Purpose (Level AAA)</h6>
+                    In content implemented using markup languages, the purpose of user interface components, icons, and regions can be programmatically determined.
+
+                </div>
+
+
+                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0"><h6>1.4.1 Use of Color (Level A)</h6>
+                    Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. Use information in addition to color, such as shape or text, to convey meaning.
+                    Color Use in Charts and Graphs:
+                    Provide non-color-based cues (e.g., patterns, labels) to differentiate elements in charts and graphs.
+                    Combine color with other visual or textual information to ensure that content is accessible to users with color vision deficiencies.
+                    <hr>
+                    <h6>1.4.2 Audio Control (Level A)</h6> 
+                    A mechanism is provided to stop, pause, mute, or adjust volume for audio that automatically plays on a page for more than 3 seconds.
+
+                    <br>
+                    <hr>
+                    <h6>1.4.3 Contrast (Minimum) (Level AA)</h6>
+                    The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:<br>
+                    - Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;<br>
+                    - Text or images of text that are part of an inactive user interface component, that are pure decoration, no contrast requirement.<br>
+                    - Logotypes - Text that is part of a logo or brand name has no contrast requirement.
+                    <hr>
+
+                    <h6>1.4.4 Resize Text (Level AA)</h6>
+                    Except for captions and images of text,The text should be resizable up to 200% without loss of content or functionality.  images of text should be avoided as they do not scale well.
+                    <hr>
+                    <h6>1.4.5 Images of Text (Level AA)</h6>
+                    Text is used to convey information rather than images of text except for the following:<br>
+                    - Customizable : The image of text can be visually customized to the user's requirements;<br>
+                    - Essential: A particular presentation of text is essential to the information being conveyed.<br>
+                    - NOTE: Logotypes (text that is part of a logo or brand name) are considered essential.
+
+                    <hr>
+                    <h6>1.4.6 Contrast (Enhanced) (Level AAA)</h6>
+                    The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:<br>
+                    - Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;<br>
+                    - Text or images of text that are part of an inactive user interface component, that are pure decoration, no contrast requirement.<br>
+                    - Logotypes - Text that is part of a logo or brand name has no contrast requirement.
+
+                    <hr>
+                    <h6>1.4.7 Low or No Background Audio  (Level AAA)</h6>
+                    No Background: The audio does not contain background sounds.
+                    Turn Off: The background sounds can be turned off.
+                    20 dB: The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.
+
+
+
+                    <hr>
+                    <h6>1.4.8 Visual Presentation  (Level AAA)</h6>
+                    Text appearance can be altered by users to meet preferences.
+                    requirement is that a mechanism is available for users to change these presentation aspects
+                    Foreground and background colors can be selected by the user.
+                    Width is no more than 80 characters or glyphs (40 if CJK).
+                    Text is not justified (aligned to both the left and the right margins).
+                    Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.
+                    Text can be resized
+
+
+                    <hr>
+                    <h6>1.4.9 Images of Text (No Exception)  (Level AAA)</h6>
+                    Users can always adjust how text is presented.
+
+
+                    <hr>
+                    <h6>1.4.10 Reflow (Level AA)</h6>
+                    Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:
+                    Exceptioinal - Examples of content which requires two-dimensional layout are images required for understanding (such as maps and diagrams), video, games, presentations, data tables (not individual cells), and interfaces where it is necessary to keep toolbars in view while manipulating content. It is acceptable to provide two-dimensional scrolling for such parts of the content.
+
+
+                    <hr>
+                    <h6>1.4.11 Non-text Contrast</h6>
+                    The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):
+                    User Interface Components: Visual information required to identify user interface components and states, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;
+                    Graphical Objects : Parts of graphics required to understand the content, except when a particular presentation of graphics is essential to the information being conveyed.
+
+
+                    <hr>
+                    <h6>1.4.12 Text Spacing  (Level AA)</h6>
+                    ensuring that content created with markup languages remains functional and readable when users adjust text spacing. Specifically, it states that no content or functionality should be lost if:
+                    Line height is set to at least 1.5 times the font size
+                    Paragraph spacing is at least 2 times the font size
+                    Letter spacing is at least 0.12 times the font size
+                    Word spacing is at least 0.16 times the font size
+
+                    <hr>
+                    <h6>1.4.13 Content on Hover or Focus  (Level AA)</h6>
+                    When additional content is presented on hover or keyboard focus:
+                    The newly revealed content can be dismissed (generally via the Esc key)
+                    The new content must remain visible until the pointer or keyboard focus is moved away from the triggering control,
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<!--Operable accordiian-->
+    
+    <div class="accordion" style="margin-top: 15px;" id="accordionExampleoperable">
+    <div class="accordion-item border-warning">
+            <h2 class="accordion-header">
+            <button class="accordion-button" style="background-color:#fff3cd" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+            <h4>Operable: User interface components and navigation must be operable.
+
+            </h4>
+            </button>
+            </h2>
+
+        <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExampleoperable">
+        <div class="accordion-body">
+        <div class="card">
+        <div class="card-body">
+
+            <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab-operable" role="tablist">
+                    <button class="nav-link active " id="nav-KeyboardAccessible-tab" data-bs-toggle="tab" data-bs-target="#KeyboardAccessible" type="button" role="tab" aria-controls="nav-KeyboardAccessible" aria-selected="true" >2.1 Keyboard Accessible
+                    </button>
+                    <button class="nav-link " id="navEnoughTime" data-bs-toggle="tab" data-bs-target="#EnoughTime" type="button" role="tab" aria-controls="EnoughTime" aria-selected="false">2.2 Enough Time</button>
+                    <button class="nav-link" id="navSeizures" data-bs-toggle="tab" data-bs-target="#Seizures" type="button" role="tab" aria-controls="Seizures" aria-selected="false">2.3 Seizures and Physical Reactions</button>
+                    <button class="nav-link " id="navNavigable" data-bs-toggle="tab" data-bs-target="#Navigable" type="button" role="tab" aria-controls="Navigable" aria-selected="false">2.4 Navigable</button>
+                    <button class="nav-link " id="navModalities" data-bs-toggle="tab" data-bs-target="#Modalities" type="button" role="tab" aria-controls="nav-Modalities" aria-selected="false">2.5 Input Modalities</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContentOp">
+                <div class="tab-pane fade show active" id="KeyboardAccessible" role="tabpanel" aria-labelledby="KeyboardAccessible" tabindex="0">
+
+                 
+                    <h6>2.1.1 Keyboard (Level A)</h6>
+                    All page functionality is available using the keyboard, unless the functionality cannot be accomplished in any known way using a keyboard (e.g., free hand drawing).
+Page-specified shortcut keys and accesskeys (accesskey should typically be avoided) do not conflict with existing browser and screen reader shortcuts.
+
+                    <br>
+                    <hr>
+                    <h6>2.1.2 No Keyboard Trap (Level A)</h6>
+                    Keyboard focus is never locked or trapped at one particular page element. The user can navigate to and from all navigable page elements using only a keyboard.
+
+                    <br>
+                    <hr>
+                    <h6>2.1.3 Keyboard (No Exception) (Level AAA)</h6>
+                    All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes
+                    <br>
+                    <hr>
+                    <h6>2.1.4 Character Key Shortcuts (Level A)</h6>
+                   If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true: <br>
+- Turn off: A mechanism is available to turn the shortcut off;<br>
+- Remap: A mechanism is available to remap the shortcut to include one or more non-printable keyboard keys (e.g., Ctrl, Alt);<br>
+- Active only on focus: The keyboard shortcut for a user interface component is only active when that component has focus.
+
+
+                </div>
+                <div class="tab-pane fade" id="EnoughTime" role="tabpanel" aria-labelledby="EnoughTime" tabindex="0">
+                    <h6>2.2.1
+                        Timing Adjustable
+                        Level A</h6>
+                        If a page or application has a time limit, the user is given options to turn off, adjust, or extend that time limit. This is not a requirement for real-time events (e.g., an auction), where the time limit is absolutely required, or if the time limit is longer than 20 hours.
+                        <hr>
+                        <h6>2.2.2
+                            Pause, Stop, Hide
+                            Level A</h6>
+                            Automatically moving, blinking, or scrolling content (such as carousels, marquees, or animations) that lasts longer than 5 seconds can be paused, stopped, or hidden by the user.
+                            Automatically updating content (e.g., a dynamically-updating news ticker, chat messages, etc.) can be paused, stopped, or hidden by the user or the user can manually control the timing of the updates.
+                            <hr>
+                        <h6>2.2.3
+                            No Timing
+                            Level AAA</h6>
+                            The content and functionality have no time limits or constraints.
+
+                            <hr>
+                        <h6>2.2.4
+                            Interruptions
+                            Level AAA</h6>
+                            Interruptions (alerts, page updates, etc.) can be postponed or suppressed by the user.
+                            <hr>
+                        <h6>2.2.5
+                            Re-authenticating
+                            Level AAA</h6>
+                            If an authentication session expires, the user can re-authenticate and continue the activity without losing any data from the current page.
+                            <hr>
+
+                            <h6>2.2.6
+                                Timeouts
+                                Level AAA</h6>
+                                Users must be warned of any timeout that could result in data loss, unless the data is preserved for longer than 20 hours of user inactivity.
+                </div>
+                <div class="tab-pane fade" id="Seizures" role="tabpanel"  tabindex="0">
+                    <h6>2.3.1
+                        Three Flashes or Below Threshold
+                        Level A</h6> 
+                        No page content flashes more than 3 times per second unless that flashing content is sufficiently small and the flashes are of low contrast and do not contain too much red. 
+                        <hr>
+
+                        <h6>2.3.2
+                            Three Flashes
+                            Level AAA</h6> No page content flashes more than 3 times per second.
+                            <hr>
+
+                            <h6>2.3.3
+                                Animation from Interactions
+                                Level AAA</h6> Users can disable non-essential animation and movement that is triggered by user interaction.
+                                <hr>
+
+                </div>
+                
+                    <div class="tab-pane fade" id="Navigable" role="tabpanel" aria-labelledby="Navigable" tabindex="0">
+                    <h6>2.4.1
+                        Bypass Blocks
+                        (Level A)</h6> A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.
+                    <hr>
+                    <h6>2.4.2
+                        Page Titled
+                        (Level A)</h6> Web pages have titles that describe topic or purpose.
+                    <hr>
+                    <h6>2.4.3
+                        Focus Order
+                        (Level A)</h6> The navigation order of links, form controls, etc. is logical and intuitive.
+                    <hr>
+                    <h6>2.4.4
+                        Link Purpose (In Context)
+                        (Level A)</h6> The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.Links with the same text that go to different locations are readily distinguishable.
+                    <hr>
+                    <h6>2.4.5
+                        Multiple Ways
+                        (Level AA)</h6> More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.
+                    <hr>
+                    <h6>2.4.6
+                        Headings and Labels
+                        (Level AA)</h6> Headings and labels describe topic or purpose.
+                    <hr>
+
+                    <h6>2.4.7
+                        Focus Visible
+                        (Level AA)</h6> There is a visible indicator for page elements when they receive keyboard focus.
+                    <hr>
+                    <h6>2.4.8
+                        Location
+                        (Level AAA)</h6> If a web page is part of a sequence of pages or within a complex site structure, an indication of the current page location is provided, for example, through breadcrumbs or specifying the current step in a sequence (e.g., "Step 2 of 5 - Shipping Address").
+                    <hr>
+
+                    <h6>2.4.9
+                        Link Purpose (Link Only)
+                        (Level AAA)</h6> The purpose of each link (or image button or image map hotspot) can be determined from the link text alone.
+                        There are no links with the same text that go to different locations.
+                    <hr>
+                    <h6>2.4.10
+                        Section Headings
+                        (Level AAA)</h6> Beyond providing an overall document structure, individual sections of content are designated using headings, where appropriate.
+                    <hr>
+                    <h6>2.4.11
+                        Focus Not Obscured (Minimum)
+                        (Level AA)</h6> When elements have keyboard focus, they are not entirely covered or hidden by page content.
+                    <hr>
+                    <h6>2.4.12
+                        Focus Not Obscured (Enhanced)
+                        (Level AAA)</h6> When elements have keyboard focus, they are entirely visible.
+                    <hr>
+                    <h6>2.4.13
+                        Focus Appearance
+                        (Level AAA)</h6>If a custom focus indicator or background color is in place, the focus indicator pixels must:
+                        have at least 3:1 contrast between focused/unfocused states
+                        be at least as large as the area of a 2 pixel thick 
+                    <hr>
+                    </div>
+                
+              
+                    <div class="tab-pane fade" id="Modalities" role="tabpanel" aria-labelledby="Modalities" tabindex="0">
+                        <h6>2.5.1
+                            Pointer Gestures
+                            Level A</h6> If multipoint or path-based gestures (such as pinching, swiping, or dragging across the screen) are not essential to the functionality, then the functionality can also be performed with a single point activation (such as activating a button).
+                        <hr>
+                        <h6>2.5.2
+                            Pointer Cancellation
+                            Level A</h6> Ensure that the actioin is only taken when pointer is clicked and relased within the boundry of target. Abort action when the pointer is released outside thee boundry of target.
+                        <hr>
+                        <h6>2.5.3
+                            Label in Name
+                            Level A</h6> If an interface component (link, button, etc.) presents text (or images of text), the accessible name (label, alternative text, aria-label, etc.) for that component must include the visible text.Acceessbility label should match the visibile label.
+                        <hr>
+                        <h6>2.5.4
+                            Motion Actuation
+                            Level A</h6> Functionality that is triggered by moving the device (such as shaking or panning a mobile device) or by user movement (such as waving to a camera) can be disabled and equivalent functionality is provided via standard controls like buttons.
+                        <hr>
+                        <h6>2.5.5
+                            Target Size (Enhanced)
+                            Level AAA</h6> The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:<br>
+                            -Equivalent: The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;
+                            <br>
+                            -Inline: The target is in a sentence or block of text;
+                            <br>
+                           - User Agent Control: The size of the target is determined by the user agent and is not modified by the author;
+                           <br>
+                            -Essential: A particular presentation of the target is essential to the information being conveyed.
+                        <hr>
+                        <h6>2.5.6
+                            Concurrent Input Mechanisms
+                            Level AAA</h6> Content does not require a specific input type, such as touch-only or keyboard-only, but must support alternative inputs (such as using a keyboard on a mobile device).
+                        <hr>
+                        <h6>2.5.7
+                            Dragging Movements
+                            Level AA</h6> Functionality that uses pointer dragging can also be achieved using a single pointer without dragging (unless dragging is essential).
+                        <hr>
+                        <h6>2.5.8
+                            Target Size (Minimum)
+                            Level AA</h6> Pointer input target sizes are at least 24 by 24 pixels unless:<br>
+                            - A 24 pixel diameter circle centered on the target element does not intersect with any other target or a 24 pixel circle centered on an adjacent target.<br>
+                            - The functionality can be achieved in some other conformant manner.<br>
+                           - The target is in a sentence or list.<br>
+                            - The target size can't be modified or is essential to the functionality.
+                        <hr>
+                    </div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    
+
+<!--Understandable-->
+
+
+<div class="accordion" style="margin-top: 15px;" id="accordionExample">
+<div class="accordion-item border-danger">
+        <h2 class="accordion-header">
+        <button class="accordion-button" style="background-color:#f8d7db" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+        <h4>Understandable: Information and the operation of the user interface must be understandable.</h4>
+        </button>
+        </h2>
+
+<div id="collapsethree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+    <div class="card">
+        <div class="card-body">
+
+                <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                    <button class="nav-link active " id="nav-home3-tab" data-bs-toggle="tab" data-bs-target="#nav-home3" type="button" role="tab" aria-controls="nav-home" aria-selected="true" >3.1 Readable
+                    </button>
+                    <button class="nav-link " id="nav-profilethree-tab" data-bs-toggle="tab" data-bs-target="#nav-profilethree" type="button" role="tab" aria-controls="nav-profilethree" aria-selected="false">3.2 Predictable</button>
+                    
+                    <button class="nav-link" id="nav-inputassistance-tab" data-bs-toggle="tab" data-bs-target="#nav-inputassistance" type="button" role="tab" aria-controls="nav-inputassistance" aria-selected="false">3.3 Input Assistance</button>
+
+                </div>
+                </nav>
+            <div class="tab-content" id="nav-tabContent3">
+                <div class="tab-pane fade show active" id="nav-home3" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div>
+                    <h6>3.1.1 Language of Page
+                    (Level A)</h6>
+                    The default human language of each Web page can be programmatically determined.The language of the page is identified using the lang attribute (e.g., <code>&lt;html lang="en"&gt;</code>)
+                    <br>
+
+                    <hr>
+                    <h6>3.1.2
+                    Language of Parts
+                    (Level AA)</h6>
+                    The language of page content that is in a different language is identified using the lang attribute (e.g., <code>&lt;html lang="es"&gt;</code>).
+
+                    <hr>
+                    <h6>3.1.3
+                    Unusual Words
+                    (Level AAA)</h6>
+                    Words that may be ambiguous, unfamiliar, or used in a very specific way are defined through adjacent text, a definition list, a glossary, or other suitable method. Make sure a mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.
+                    <hr>
+                    <h6>3.1.4
+                    Abbreviations
+                    (Level AAA)</h6>
+                    The meaning of an unfamiliar abbreviation is provided by expanding it the first time it is used, using the <code>&lt;abbr&gt;</code> element, or linking to a definition or glossary.
+                    <hr>
+                    <h6>3.1.5
+                    Reading Level
+                    (Level AAA)</h6>
+                    A more understandable alternative is provided for content that is more advanced than can be reasonably read by a person with roughly 9 years of primary education.
+                    <hr>
+                    <h6>3.1.6
+                    Pronunciation
+                    (Level AAA)</h6>
+                    If the pronunciation of a word is vital to understanding that word, its pronunciation is provided immediately following the word or via a link or glossary.
+                    </div>
+                </div>
+
+            
+                
+                    <div class="tab-pane fade" id="nav-profilethree" role="tabpanel" aria-labelledby="nav-profilethree-tab" tabindex="0">
+                       <h6>3.2.1 On Focus
+                        (Level A)</h6>
+                        When any user interface component receives focus, it does not initiate a change of context.
+                        <hr>
+                        <h6>3.2.2
+                        On Input
+                        (Level A)</h6>
+                        When a user inputs information or interacts with a control/user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.
+                        <br>
+                        <hr>
+                        <h6>3.2.3
+                        Consistent Navigation
+                        (Level AA)</h6>
+                        Navigation links that are repeated on web pages do not change order when navigating through the site.
+                        <br>
+                        <hr>
+                        <h6>3.2.4
+                        Consistent Identification
+                        (Level AA)</h6>
+                        Components that have the same functionality within a set of Web pages are identified consistently.For example, a search box at the top of the site should always be labeled the same way.
+                        <br>
+                        <hr>
+                        <h6>3.2.5
+                        Change on Request
+                        (Level AAA)</h6>
+                        Changes of context are initiated only by user request or a mechanism is available to turn off such changes.
+                        <br>
+                        <hr>
+                        <h6>3.2.6
+                        Consistent Help
+                        (Level A)</h6>
+                        Contact and self-help details or functionality are presented consistently when present on multiple web pages.
+                      
+                    </div>
+                    <div class="tab-pane fade" id="nav-inputassistance" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <h6>3.3.1
+                            Error Identification
+                            (Level A)</h6>
+                            If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.Required inputs or inputs that require a specific format, value, or length provide this information within the element's label.
+                        <br><hr>
+                        <h6>3.3.2
+                            Labels or Instructions
+                            (Level A)</h6>
+                            Inputs are identified by labels or instructions that help users know what information to enter.
+                        <br><hr>
+                        <h6>3.3.3
+                            Error Suggestion
+                            (Level AA)</h6>
+                            If an input error is detected (via client-side or server-side validation), suggestions are provided for fixing the input in a timely and accessible manner.
+                            <br><hr>
+                        <h6>3.3.4
+                            Error Prevention (Legal, Financial, Data)
+                           ( Level AA)</h6> For important actions like legal, finance, or data make sure a machnisam is provided for the user to undo anything they did not mean to do. Provide atleas one of the machinism <br> <b>Reversible:</b> Submissions are reversible.
+                                <br>
+                           <b>Checked:</b> Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+                           <br>
+                           <b>Confirmed:</b> A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+                           <br><hr>
+                        <h6>3.3.5
+                            Help
+                            (Level AAA)</h6>
+
+                            Instructions and cues are provided in context to help in form completion and submission.
+                            <br><hr>
+                        <h6>3.3.6
+                            Error Prevention (All)
+                            (Level AAA)</h6>
+                            For Web pages that require the user to submit information, at least one of the following is true:
+                            <br> <b>Reversible:</b> Submissions are reversible.
+                                <br>
+                           <b>Checked:</b> Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.
+                           <br>
+                           <b>Confirmed:</b> A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.
+                            <br><hr>
+                        <h6>3.3.7
+                            Redundant Entry
+                            Level A</h6>
+                            Information previously entered by or provided to the user that is required to be entered again in the same process is either: 
+<br>
+- auto-populated, or<br>
+
+- available for the user to select.<br>
+
+<b>Except when:</b>
+
+- re-entering the information is essential,<br>
+
+- the information is required to ensure the security of the content, or<br>
+
+- previously entered information is no longer valid.
+
+
+                            <br><hr>
+                        <h6>3.3.8
+                            Accessible Authentication (Minimum)
+                            (Level AA)</h6>
+                            A cognitive function test (such as remembering a password or solving a puzzle) is not required for any step in an authentication process unless that step provides at least one of the following:<br>
+                            <b>Alternative:</b> Another authentication method that does not rely on a cognitive function test.<br>
+
+        <b>Mechanism:</b> A mechanism is available to assist the user in completing the cognitive function test.<br>
+
+        <b>Object Recognition:</b> The cognitive function test is to recognize objects.<br>
+
+        <b>Personal Content:</b> The cognitive function test is to identify non-text content the user provided to the Web site.
+                            <br><hr>
+                        <h6>3.3.9
+                            Accessible Authentication (Enhanced)
+                            (Level AAA)</h6>
+                            A cognitive function test (such as remembering a password or solving a puzzle) is not required for any step in an authentication process unless that step provides at least one of the following:<br>
+                            <b>Alternative:</b> Another authentication method that does not rely on a cognitive function test.<br>
+
+                            <b>Mechanism:</b> A mechanism is available to assist the user in completing the cognitive function test.<br>
+                           
+                    </div>
+                </div>
+
+                
+        </div>
+    </div>
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!--RObust-->
+
+
+<div class="accordion" style="margin-top: 15px;" id="accordionExample">
+<div class="accordion-item border-success">
+<h2 class="accordion-header">
+<button class="accordion-button" style="background-color:#d7f0de;" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+<h4>Robust: Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.
+
+</h4>
+</button>
+</h2>
+
+<div id="collapsefour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<div class="card">
+<div class="card-body">
+
+<nav>
+<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+<button class="nav-link active " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" >4.1 Compatible
+</button>
+
+</nav>
+<div class="tab-content" id="nav-tabContent">
+<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+
+
+<h6>4.1.2 Name, Role, Value (Level A)</h6>
+Give components correct names, roles, states, and values. programmatically determinable role, state, and value information on all user interface components enables compatibility with assistive technology, such as screen readers, screen magnifiers, and speech recognition software, used by people with disabilities.
+<br>
+<hr>
+
+<h6>4.1.3 Status Messages (Level AA)</h6>
+
+make users aware of important changes in content(status message) that are not given focus, and to do so in a way that doesn't unnecessarily interrupt their work.
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+<!--______HTML accessibility best practice_______-->
+
+<div class="container" ID="SemanticHTML" style="margin-top:60px" class="section">
+    
+    <div class="card" style="padding: 20px 40px; color: #60b68e;">
+
+       <h5> To ensure your HTML is accessible, it's important to follow specific guidelines that cater to users with disabilities. Here are key concepts and elements to focus on:
+    </h5>
+    </div>
+    <div class="card" style="padding: 20px 40px">    
+    <h4>1. Semantic HTML</h4>
+        <p>Use of proper tags: Use semantic elements to convey meaning (e.g.,<code> <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;artical&gt;</code>, <code>&lt;nav&gt;</code>, </code> etc.). These tags improve screen reader navigation and help assistive technology (AT) understand the page structure.
+        </p > 
+        Example:
+        <pre><code>&lt;header&gt;Site Header&lt;/header&gt;
+&lt;nav&gt;Navigation Links&lt;/nav&gt;
+&lt;main&gt;Main Content&lt;/main&gt;
+&lt;footer&gt;Site Footer&lt;/footer&gt;</code></pre>
+
+        </div>
+   
+    
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>
+            2. Forms and Inputs 
+        </h4>
+<p><b>Labeling inputs:</b> Ensure every form field has an associated <code>&lt;label&gt;</code> element. Use the for attribute on the label to link it to its corresponding form field.</p>
+    
+    Example:
+        <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name"&gt;</code></pre>
+
+<p><b>Accessible error messages: </b> When a user makes an error, provide clear and accessible feedback using aria-live regions or focus management techniques.
+Example:</p>
+        <pre><code>&lt;div aria-live="assertive" class="error-message"&gt;Please enter a valid email address.&lt;/div&gt;</code></pre>
+        </div>
+    
+
+    <div class="card"style="padding:20px 40px">
+        <h4>3. Images</h4>
+        <p><b>Alt text: </b>Always include alt attributes in <code>&lt;img&gt;</code> tags to describe the content or purpose of the image. This helps screen readers convey the meaning of images to users.
+        </p>
+        Example:
+        <pre><code>&lt;img src="logo.png" alt="Company logo"&gt;</code></pre>
+
+        <p><b>Decorative images:</b> If an image is purely decorative, provide an empty alt="" attribute to let assistive technologies know they can skip it.</p>
+        Example:
+        <pre><code>&lt;img src="divider.png" alt=""&gt;</code></pre>
+    </div>
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>4. Links</h4>
+        <p><b>Descriptive link text:</b> Ensure that links provide meaningful context even when read out of their surrounding content.</p>
+Avoid <pre><code>&lt;a href="report.pdf">Click here&lt;/a&gt;</code></pre>
+        Instead, write:<pre><code>&lt;a href="report.pdf"&gt;Download the annual report&lt;/a&gt;</code></pre>
+    </div>
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>5. Headings</h4>
+        <p><b>Correct heading structure:</b> Use heading tags (<code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>) in a logical order to create a hierarchy. Screen readers use this structure to navigate the content.</p>
+        Example:
+        <pre><code>&lt;h1&gt;Main Title&lt;/h1&gt;<br>&lt;h2&gt;Subtitle 1&lt;/h2&gt;<br>&lt;h3&gt;Section under Subtitle 1&lt;/h3&gt;</code></pre>
+    </div>
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>6. ARIA (Accessible Rich Internet Applications)</h4>
+        <p><b>ARIA roles and attributes:</b> Use ARIA roles (like <code>role="navigation", role="main", role="button"</code>) and states (like <code>aria-expanded, aria-live </code>) to enhance accessibility where standard HTML elements fall short. ARIA should be used carefully and only when necessary.</p>
+        Example:
+        <pre><code>&lt;div role="button" aria-expanded="false"&gt;Expand&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>7. Keyboard Navigation</h4>
+        <p>Ensure that all interactive elements (buttons, links, forms) can be accessed using a keyboard (<code>tab, enter, and space keys </code>). Test your page to ensure that users can navigate without a mouse.<br>
+            <b>Focus states:</b> Make sure that focusable elements have visible focus indicators. This helps users know where they are when navigating via the keyboard.
+            </p>
+            Example:
+            <pre><code>button:focus, a:focus {
+                outline: 2px solid #000;
+              }</code></pre>
+    </div>
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>8. Tables</h4>
+        <p><b>Use tables for data:</b> Avoid using tables for layout purposes. When using tables for data, ensure that they are marked up with <code>&lt;th&gt;</code> (table headers) and use the scope attribute to clarify relationships between headers and data cells.</p>
+Example:
+        <pre><code>&lt;table&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th scope="col"&gt;Name&lt;/th&gt;
+                &lt;th scope="col"&gt;Age&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Alice&lt;/td&gt;
+                &lt;td&gt;30&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+
+    </div>
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>9. Landmark Roles</h4>
+        <p>Use HTML5 landmarks like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>. You can also use role attributes to help screen readers understand the structure of the page.
+        </p>
+        Example:
+        <pre><code>&lt;nav role="navigation"&gt;...&lt;/nav&gt;
+&lt;main role="main"&gt;...&lt;/main&gt;</code></pre>
+    </div>
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>10. Color Contrast</h4>
+        <p>Ensure text and background colors meet contrast ratio guidelines. Use a contrast checker to verify a minimum ratio of<code>4.5:1 </code> for normal text and <code>3:1 </code> for large text.</p>
+    </div>
+
+
+    <div class="card" style="padding: 20px 40px">
+        <h4>11. Accessible Media</h4>
+        <p><b>Captions and transcripts:</b> For video and audio content, provide captions and transcripts so users with hearing impairments can access the information.
+            <br><b>ARIA for media players:</b> If you're using a custom media player, ensure that all controls are accessible (play, pause, volume, etc.) and labeled using ARIA attributes.</p>
+    </div>
+</div>
+</div>
+
+
+<!--Accessibility checck list-->
+
+<div class="container" id="a11Ychecklist" style="margin-top: 50px" >
+    <div class="card">
+   <div class="card text-center" style="padding: 20px;  color: #60b68e;" ><h3> A comprehensive HTML accessibility checklist:</h3></div>
+<div  style="padding: 0 20px;">
+        <h4 style="padding-top: 20px;">1. Page Structure</h4> 
+ <ul><li><b>Semantic HTML:</b> Use appropriate HTML5 semantic elements (<code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, etc.) to define the structure of the page.</li>
+    <li><b>Headings:</b> Ensure heading tags (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) are used in a logical order and represent the structure of the content. Avoid skipping heading levels.</li>
+    <li><b>Landmark Roles:</b> Use landmarks (e.g., <code>&lt;main&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>) or ARIA roles (e.g., <code>role="main", role="navigation"</code>) to define key regions of the page.</li>
+</ul>
+<hr>
+        <h4>2. Text Alternatives</h4>
+<ul> <li><b> Text for Images:</b> Every image should have an <code>alt </code>attribute. Provide a brief description for meaningful images and empty <code>alt=""</code> for decorative images.</li>
+     <li><b>Icons/Graphics: </b>Use <code>aria-label or aria-hidden</code> to ensure icons are accessible and correctly described to screen readers.</ul></li>
+<hr>
+
+   
+         <h4> 3. Forms and Inputs</h4>
+    <ul>
+       
+ <li><b>Labels for Form Elements:</b> Each form control (<code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>) must have a descriptive <code>&lt;label&gt;</code> or use aria-label.</li>
+ <li><b>Error Messages:</b> Provide clear, accessible error messages that are announced to screen readers using <code>aria-live</code>.</li>
+ <li><b>Fieldset and Legend:</b> Use <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code>to group related form fields, especially for radio buttons or checkboxes.</li>
+    </ul>
+
+    <hr>
+
+        <h4>4. Links and Navigation</h4>
+        <ul>
+            <li><b>Descriptive Link Text:</b> Ensure link text is meaningful and describes the destination or purpose (e.g., avoid “Click here”).</li>
+           <li> <b>Keyboard Navigation:</b> All interactive elements should be accessible via the keyboard (Tab, Enter, Space keys). Test for keyboard focus.</li>
+            <li><b>Skip Links:</b> Include a “skip to content” link for keyboard users to bypass navigation.</li>
+        </ul>
+       
+
+            <hr>
+            <h4>5. Media (Images, Audio, Video)</h4>
+       <ul>
+           <li> <b>Alt Text for Audio/Video:</b> Provide captions, transcripts, or audio descriptions for multimedia content.</li>
+            <li><b>Controls for Media Players: </b>Ensure media players have accessible controls, including play, pause, and volume, and they are operable via the keyboard.</li>
+    
+         </ul>
+       <hr>
+            <h4>6. Tables</h4>
+            <ul>
+            <li><b>Data Tables:</b> Use <code>&lt;table&gt;</code>, <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code> elements correctly for data tables. Include the scope attribute to associate table headers with cells.</li>
+            <li><b> Table Summaries:</b> Provide a summary or description for complex tables using the summary attribute or caption element.</li> 
+            </ul>
+<hr>
+
+            <h4>7. ARIA (Accessible Rich Internet Applications)</h4>
+            <ul>
+                <li> <b>Use ARIA Wisely: </b>Use ARIA roles, states, and properties (<code>aria-label, aria-hidden, role="button",</code> etc.) when native HTML doesn’t provide enough accessibility.</li>
+                    <li><b>ARIA Live Regions:</b> Use <code>aria-live </code>for dynamic content updates to notify users about changes without losing focus.
+                   </li>
+            </ul>
+ <hr>
+            
+            <h4>8. Keyboard and Focus Management</h4>
+
+            <ul>
+                <li> <b>Visible Focus Indicators: </b>Ensure all interactive elements have a clear, visible focus outline when navigated via the keyboard.</li>
+                    <li><b>Focus Order:</b> Ensure a logical and intuitive focus order for interactive elements, especially forms and navigation.</li>
+            </ul>
+
+<hr>
+
+            <h4>9. Color and Contrast</h4>
+            <ul>
+                <li><b>Sufficient Contrast:</b> Ensure the text color contrast ratio meets WCAG requirements (<b>4.5:1 for small text and 3:1 for large text</b>).</li>
+                <li><b>Avoid Color Alone for Meaning:</b> Don’t rely solely on color to convey meaning (e.g., use text labels or patterns along with color for status indicators).</li>
+               
+            </ul>
+
+            <hr>
+
+            <h4>10. Responsive Design and Zoom</h4>
+            <ul>
+                <li><b>Responsive Design: </b>Ensure the layout is responsive and accessible on different screen sizes without losing content or functionality.</li>
+                <li><b>Zoom:</b> Ensure that the page remains functional and readable when <b>zoomed to 200%</b>.</li>
+               
+            </ul>
+
+            <hr>
+
+            <h4>11. Performance & Loading</h4>
+            <ul>
+                <li><b>Accessible Loading Indicators:</b> If content dynamically loads, use accessible loading indicators and announce changes to screen readers with <code>aria-live.</code></li>
+            </ul>
+<hr>
+            <h4>12. Documentation and Testing</h4>
+            <ul>
+                <li><b>Automated Accessibility Testing: </b>Run automated tools (like Lighthouse, axe, or WAVE) to catch common accessibility issues.</li>
+                    <li><b>Manual Testing:</b> Test manually with a keyboard, screen reader (like NVDA, JAWS, Talkback, VoiceOver), and other assistive technologies to verify accessibility.
+                   </li>
+            </ul>
+
+    </div>
+</div>
+</div>
+
+
+<div class="container" id="InterviewQA" style="margin-top: 50px" >
+
+    <!--questiion 1-->
+
+    <div class="accordion" id="accordionQA">
+        <div class="accordion-item" >
+            
+          <h2 class="accordion-header" >  <div class="text-center" style="padding:20px">Questiones and Answers</div>
+            <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ1" aria-expanded="false" aria-controls="collapseQ1">
+             
+<h4>What is WCAG compliance?</h4>
+</button>
+</h2>
+<div id="collapseQ1" class="accordion-collapse collapse " data-bs-parent="#accordionQA">
+  <div class="accordion-body">
+            <p>
+                WCAG compliance refers to meeting the guidelines outlined in the Web Content Accessibility Guidelines (WCAG), a set of internationally recognized standards for making web content accessible to people with disabilities. WCAG is maintained by the World Wide Web Consortium (W3C) and is widely adopted to ensure web content is usable by people with various disabilities, including visual, auditory, cognitive, and motor impairments.
+            </p>
+            <p>
+                <h4>Key Components of WCAG</h4>
+                <p>
+                    <b>WCAG Versions:</b>
+<ul>
+<li><b>WCAG 2.0:</b> Published in 2008.</li>
+
+<li><b>WCAG 2.1:</b> Released in 2018 (an update to address mobile accessibility and people with low vision, cognitive, and learning disabilities).</li>
+
+<li><b>WCAG 2.2:</b> Drafted in 2023 with further improvements.</li>
+
+<lii><b>WCAG 3.0:</b> Currently under development with a broader, more flexible approach to accessibility.</lii>
+</ul>
+                </p>
+
+         
+                <p>
+                    <b>Four Principles of Accessibility (POUR) WCAG is built around four core principles, ensuring that web content is:</b>
+ <ul>
+                        
+    <li><b>Perceivable:</b> Information and user interface components must be presented in ways users can perceive (e.g., alternative text for images, captions for videos, color contrast for readability).</li>
+   
+    <li><b>Operable:</b> Users must be able to operate the interface (e.g., keyboard navigation, no time-sensitive tasks, no content that causes seizures like flashing lights).</li>
+    
+    <li>
+        <b>Understandable:</b> Content and controls should be easy to comprehend (e.g., clear instructions, readable text, predictable navigation).
+        
+    </li>
+    <li><b>Robust:</b> Content should be compatible with a wide range of assistive technologies (e.g., correct use of ARIA roles, valid HTML, compatibility with screen readers).</li>
+    
+ </ul>
+                </p>
+            </p>
+            <h4>WCAG Levels of Compliance</h4>
+            
+            <p>The guidelines define three levels of conformance to address different accessibility needs:<br>
+<ul>
+    
+                   <li> <b>Level A (Minimum):</b> The most basic web accessibility features. Meeting this level is mandatory for content to be accessible to some users (e.g., alt text for images, basic keyboard functionality).</li>
+                   
+                   <li>
+                        <b>Level AA (Recommended):</b> A wider range of accessibility issues addressed, providing a better experience for most users with disabilities. This level is the legal standard for many countries (e.g., contrast ratio standards, resizing text to 200% without breaking the layout).
+                    
+                   </li>
+                   <li><b> Level AAA (Highest):</b> The highest and most inclusive level of accessibility. It’s considered ideal, but achieving it for all web content may not always be feasible (e.g., sign language interpretation for all videos, advanced cognitive and learning accessibility features).</li>
+                    
+</ul>
+                </p>
+                <h4>Why WCAG Compliance is Important</h4>
+                <p><b>Legal Compliance: </b>Many countries have adopted WCAG as part of their accessibility laws and regulations (e.g., the Americans with Disabilities Act (ADA) in the U.S., the European Union’s Web Accessibility Directive).
+                    <br>
+                    <b>Inclusion:</b> WCAG compliance ensures that people with disabilities, such as blindness, low vision, hearing impairments, cognitive limitations, and motor impairments, can use and benefit from digital content.
+                    <br>
+                   <b> Broader Usability:</b> Following WCAG also improves the overall user experience for all users, including those on mobile devices or in situations where they face temporary impairments (e.g., using a device in bright sunlight).
+                    <br>
+                    <b>SEO and Performance:</b> Accessible content tends to perform better in search engines, as many accessibility features overlap with SEO best practices (e.g., alt text for images).
+                    <br>
+                    In summary, WCAG compliance ensures that websites and digital products are accessible to all users, regardless of their disabilities, and adhering to these guidelines also protects businesses from potential legal issues.</p>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+    <!--question 2-->
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ2" aria-expanded="false" aria-controls="collapseQ2">
+        <h4>what all checkpoints/criterion you test for accessibility smoke testing </h4>
+    
+</button>
+</h2>
+<div id="collapseQ2" class="accordion-collapse collapse " data-bs-parent="#accordionQA">
+  <div class="accordion-body">
+<p>
+    For accessibility smoke testing, the goal is to quickly verify if the most critical accessibility issues are addressed before diving into more comprehensive testing. Here are key checkpoints/criteria that I would focus on:
+
+    <br>
+1. <b>Keyboard Accessibility</b>
+Ensure all interactive elements (buttons, links, form fields) are accessible using only the keyboard (usually by pressing the Tab key).
+Verify that focus indicators are visible and move logically.
+Test for common keyboard shortcuts and navigation, such as using Enter to activate links/buttons and Space to check/uncheck checkboxes.
+<br>
+2. <b>Screen Reader Compatibility</b>
+Check if the screen reader (e.g., NVDA, JAWS, VoiceOver) announces the content correctly.
+Ensure that heading structures are present and in logical order (<code>h1,h2,</code> etc.).
+Verify that form labels and input fields are properly associated using aria-label, aria-labelledby, or<code> &lt;label&gt;</code>
+<br>
+3. <b>Color Contrast</b>
+Ensure text has sufficient contrast against its background, meeting WCAG 2.1 AA standards (contrast ratio of at least 4.5:1 for normal text and 3:1 for large text).
+<br>
+4. <b>Alt Text for Images</b>
+Verify that all informative images have appropriate alt attributes.
+Decorative images should have empty alt attributes <code>(alt="")</code>.
+<br>
+5. <b>Resizing Text</b>
+Check if the text can be resized up to 200% without loss of content or functionality.
+<br>
+6.<b> Accessible Forms</b>
+Ensure that form fields have descriptive labels and proper instructions.
+Verify that error messages are visible and announced to assistive technologies when a user submits a form with invalid or missing information.
+<br>
+7. <b>Links and Buttons</b>
+Ensure that links and buttons have meaningful and descriptive text (avoid “Click here” or “Read more” without context).
+Confirm that they are focusable and accessible via screen readers.
+<br>
+8. <b>ARIA Landmarks and Roles</b>
+Check for proper use of ARIA landmarks (e.g., <code> &lt;nav&gt;, &lt;main&gt;, &lt;header&gt;, &lt;footer&gt;</code>) for easier navigation by screen readers.
+Ensure ARIA roles are correctly applied and not misused.
+<br>
+9. <b>Dynamic Content</b>
+For any dynamic content (e.g., popups, modals, or dropdowns), ensure that it is announced to screen readers and that focus is trapped within the modal until closed.
+<br>
+10. <b>Text Alternatives for Non-Text Content</b>
+Ensure that multimedia content (like videos) has captions or transcripts available.
+These checkpoints provide a high-level view of potential issues, helping ensure the critical accessibility elements are functioning before diving into deeper, more comprehensive testing.
+
+
+</p>
+    </div>
+</div>
+
+
+<!--Questiion 3-->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+        
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ3" aria-expanded="false" aria-controls="collapseQ3">
+       <h4>what is tab index and why it matter in accessibility?</h4> 
+      </button>
+    </h2>
+    <div id="collapseQ3" class="accordion-collapse collapse " data-bs-parent="#accordionQA">
+      <div class="accordion-body">
+        <p>
+            <code>tabindex</code> is an HTML attribute that controls the keyboard navigation order of elements on a webpage, particularly when users navigate via the Tab key.
+        </p>
+        <h5>How tabindex Works</h5>
+        <p>
+            The tabindex attribute can be assigned different values that affect the tab order and focusability of elements:<br>
+
+1. <code>tabindex="0":</code>
+<br>
+<b>Default Tab Order:</b> The element is inserted into the natural tab order, meaning it will follow the browser’s default focus order (based on the document structure).
+
+Use <code>tabindex="0"</code> for Custom Elements:
+
+If you have a custom component (like a clickable  &lt;div&gt;, &lt;span&gt; or a custom modal), use <code>tabindex="0"</code> to make it keyboard-focusable without affecting the natural tab order.
+        </p>
+
+        <hr>
+
+       <p>
+       2. <code> tabindex="-1":</code>
+<br>
+<b>Removes from Tab Order:</b> The element is focusable by scripts (e.g., JavaScript), but it will not be reachable via the Tab key. This is useful for modal dialogs or elements that should only receive focus under specific conditions. <br>
+Use <code>tabindex="-1" </code>for elements that you want to be focusable only when necessary. For example, when opening a modal dialog, you may programmatically set focus on an element inside the modal and trap focus within it.
+       </p>
+
+       <hr>
+
+       <p>
+       3.  <code>tabindex="1" or higher:</code>
+       <br>
+       <b> Custom Tab Order: </b>The element is placed in the manual tab order, overriding the natural tab order. Elements with a positive tabindex are focused in ascending numerical order before elements without a tabindex or with a value of 0.
+<br> Note: Using positive tabindex values can create a confusing and non-intuitive focus flow and is generally discouraged unless absolutely necessary.
+
+       </p>
+       example:<code> &lt;button tabindex="2">Second in tab order &ltcc;/button&gt; <br>
+       &lt;button tabindex="1">First in tab order&ltcc;/button&gt;</code>
+    </div>
+
+</div>
+
+
+
+<!--Question 4-->
+
+<div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ4" aria-expanded="false" aria-controls="collapseQ4">
+<h4> What is ARIA?</h4>
+</button>
+</h2>
+<div id="collapseQ4" class="accordion-collapse collapse " data-bs-parent="#accordionQA">
+  <div class="accordion-body">
+        <p>
+            ARIA (Accessible Rich Internet Applications) is a set of attributes used to make web applications more accessible when native HTML features are insufficient while using customes elements.
+        </p>
+        <h5>Key Concepts of ARIA</h5>
+        <P>
+            <ul>
+                
+                    1.<b> ARIA Roles:</b> These define what type of element a particular part of the page is, providing additional context to assistive technologies. For example:
+
+                    <li><code>role="button"</code>: Defines an element as a button.</li>
+                    <li><code>role="navigation"</code>: Defines a section of the page as a navigation landmark.</li>
+                    <li><code>role="alert"</code>: Marks an element as a live alert, immediately notifying the user.</li>
+               
+              
+                   2.  <b>ARIA States:</b> These describe the current status or condition of an interactive element. For example:
+
+<li><code>aria-checked="true"</code>: Indicates that a checkbox is checked.</li>
+<li><code>aria-expanded="false"</code>: Specifies whether a collapsible section or dropdown is expanded or collapsed.</li>
+              
+                
+                    3. <b>ARIA Properties:</b> These provide additional information about elements, such as relationships and descriptions. For example:
+
+<li><code>aria-labelledby="elementID"</code>: Associates a UI element with a label or title.</li>
+<li><code>aria-describedby="elementID"</code>: Links an element with additional descriptive content.</li>
+
+               
+            </ul>
+        </P>
+    </div>
+
+</div>
+
+
+<!--question 5-->
+<div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseQ5" aria-expanded="false" aria-controls="collapseQ5">
+<h4> WCAG 2.1 and 2.2 </h4>
+</button>
+</h2>
+<div id="collapseQ5" class="accordion-collapse collapse " data-bs-parent="#accordionQA">
+  <div class="accordion-body">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">WCAG 2.1</th>
+            <th scope="col">New in WCAG 2.2</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>1.3.4 Orientation (AA)</td>
+            <td>2.4.11 Focus Not Obscured (Minimum) (AA)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>1.3.5 Identify Input Purpose (AA)</td>
+            <td>2.4.12 Focus Not Obscured (Enhanced) (AAA)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>1.3.6 Identify Purpose (AAA)</td>
+            <td>2.4.13 Focus Appearance (AAA)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>1.4.10 Reflow (AA)</td>
+            <td>2.5.7 Dragging Movements (AA)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>1.4.11 Non-Text Contrast (AA)</td>
+            <td>2.5.8 Target Size (Minimum) (AA)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>1.4.12 Text Spacing (AA)</td>
+            <td>3.2.6 Consistent Help (A)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>1.4.13 Content on Hover or Focus (AA)</td>
+            <td>3.3.7 Redundant Entry (A)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>2.1.4 Character Key Shortcuts (A)</td>
+            <td>3.3.8 Accessible Authentication (Minimum) (AA)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>2.2.6 Timeouts (AAA)</td>
+            <td>3.3.9 Accessible Authentication (Enhanced) (AAA)</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">10</th>
+            <td>2.3.3 Animation from Interactions (AAA)</td>
+            <td>-</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">11</th>
+            <td>2.5.1 Pointer Gestures (A)</td>
+            <td>-</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">12</th>
+            <td>2.5.2 Pointer Cancellation (A)</td>
+            <td>-</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">13</th>
+            <td>2.5.3 Label in Name (A)</td>
+            <td>-</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">14</th>
+            <td>2.5.4 Motion Actuation (A)</td>
+            <td>-</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">15</th>
+            <td>2.5.5 Target Size (AAA)</td>
+            <td>-</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">16</th>
+            <td>2.5.6 Concurrent Input Mechanisms (AAA)</td>
+            <td>-</td>
+           
+          </tr>
+
+          <tr>
+            <th scope="row">17</th>
+            <td>4.1.3 Status Messages (AA)</td>
+            <td>-</td>
+           
+          </tr>
+
+        </tbody>
+      </table>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+<div style="margin-bottom: 100px"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

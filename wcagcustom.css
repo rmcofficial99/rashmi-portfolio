@@ -1,0 +1,93 @@
+
+.card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: auto;
+        border-radius: 5px;
+        border-color: #f8d7db;
+        padding: 4px;
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+     
+      .guidelines{
+        margin-top: 6px;
+      }
+
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: var(--bs-nav-pills-link-active-color);
+        background-color: #75b798;
+    }
+
+    .tab-content{
+        padding: 30px;
+    }
+h6{
+    color: #ff5757;
+}
+
+.nav-link{font-weight: bold ;}
+
+.per{background-color:#cfe2ff ;}
+.OP{background-color: #fff3cd;}
+
+.Und{background-color:#f8d7db;}
+.Rob{background-color: #75b798;}
+
+body{margin-left: 50px;margin-right: 50px;}
+
+
+
+/*code {
+    font-family: Consolas,"courier new";
+    color: crimson;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 105%;
+  }*/
+
+  pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: medium;
+}
+code {
+    color: #d6336c;
+    font-family: Consolas,"courier new";
+    font-size: medium;
+}
+code {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: Consolas, "courier new";
+    color: #d6336c; /* Code text color */
+}
+
+#SemanticHTML{padding: 40px;}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+.section {
+    scroll-margin-top: 180px; /* Same as the navbar height */
+    padding: 50px;
+   
+}
+
+
+#mainnav{margin-left: 100px;}
+
+hr{padding-bottom: 10px;}
+
