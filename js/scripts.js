@@ -7,10 +7,10 @@
 // Scripts
 // 
 
-window.addEventListener('DOMContentLoaded', event => {
+//window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
-    const sideNav = document.body.querySelector('#sideNav');
+  /*  const sideNav = document.body.querySelector('#sideNav');
     if (sideNav) {
         new bootstrap.ScrollSpy(document.body, {
             target: '#sideNav',
@@ -31,7 +31,26 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+});*/
+
+
+
+
+window.addEventListener('DOMContentLoaded', () => {
+  new bootstrap.ScrollSpy(document.body, {
+    target: '#sideNav',
+    offset: 100
+  });
 });
+
+
+
+
+
+
+
+
+
 
 //Initilize curosel
 
@@ -62,3 +81,11 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeInElements.forEach(element => {
         observer.observe(element);
     });
+
+
+
+
+
+//navbar menu animation and active class
+
+
